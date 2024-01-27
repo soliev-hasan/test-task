@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ChatApp.css";
-jest.mock("websocket", () => ({
-  ...jest.requireActual("websocket"),
-  w3cwebsocket: jest.fn(),
-}));
+
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 import ChatMessage from "../ChatMessage/ChatMessage";
 
